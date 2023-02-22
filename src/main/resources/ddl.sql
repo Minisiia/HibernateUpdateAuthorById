@@ -1,0 +1,15 @@
+USE library;
+
+DROP TABLE book200;
+DROP TABLE author200;
+CREATE TABLE author200
+(
+    id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name VARCHAR(45)
+);
+CREATE TABLE book200
+(
+    id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name VARCHAR(45),
+    author_id INT(11)
+);
