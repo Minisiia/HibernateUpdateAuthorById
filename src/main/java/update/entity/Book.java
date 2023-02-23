@@ -52,4 +52,12 @@ public class Book {
         this.authorId = authorId;
     }
 
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", authorId=" + authorId +
+                '}';
+    }
 }
