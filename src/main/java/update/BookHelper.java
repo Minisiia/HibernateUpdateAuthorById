@@ -43,7 +43,7 @@ public class BookHelper {
     public void add200Books() {
         Session session = sf.openSession();
         session.beginTransaction();
-        for (int i = 1; i < 21; i++) {
+        for (int i = 1; i < 201; i++) {
             int idAuthor = i;
             if (i % 3 == 0) idAuthor = i / 3;
             session.save(new Book("Title" + i, idAuthor));
