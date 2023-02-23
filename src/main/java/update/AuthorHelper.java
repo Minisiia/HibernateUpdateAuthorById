@@ -54,7 +54,7 @@ public class AuthorHelper {
     public void add200Authors() {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        for (int i = 1; i < 21; i++) {
+        for (int i = 1; i < 201; i++) {
             session.save(new Author("Name" + i, "Last name" + i));
             if (i % 10 == 0) {
                 session.flush();
